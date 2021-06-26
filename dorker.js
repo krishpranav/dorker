@@ -41,5 +41,17 @@ function Google(site)
         return this
     }
 
+    this.set_dork = function(dork)
+    {
+        dorks = dorks.concat(dork)
+        return this
+    }
+    
+    this.set_dorks = function(dorks_file)
+    {
+        dorks = dorks.concat( fs.isFile(dorks_file) ? fs.read(dorks_file).replace(/\r/g, '').split('\n').reverse().filter( function(a) { return a } ) : [] )
+        return this
+    }
+
 
 }
