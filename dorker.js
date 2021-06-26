@@ -68,4 +68,10 @@ function Google(site)
         }
     }
 
+    this.filter = function(filter)
+    {
+        query += ' ' + filter
+        return this 
+    }
+
 }
