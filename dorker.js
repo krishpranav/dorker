@@ -19,4 +19,8 @@ function Google(site)
     var found_pages = 0
     var timeout = 0
     var captcha_retry_timeout = 0
+    this.done = false
+    web_browser.viewportSize = { width: 1280, height: 800 }
+	web_browser.settings.userAgent = userAgents[ parseInt( Math.random() * userAgents.length ) ]
+	web_browser.__this = this
 }
