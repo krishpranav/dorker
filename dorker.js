@@ -53,5 +53,10 @@ function Google(site)
         return this
     }
 
+    var save_state = function(session_file, state)
+    {
+        fs.write(session_file, JSON.stringify(state), 'w')
+        
+    }
 
 }
