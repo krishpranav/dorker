@@ -9,3 +9,14 @@ var userAgents = [
 	"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/535.7 (KHTML, like Gecko) Comodo_Dragon/16.1.1.0 Chrome/16.0.912.63 Safari/535.7",
 	"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)"
 ]
+
+function Google(site)
+{
+    var web_browser = require('webpage').create()
+    var uri = 'http://www.googe.com/'
+    var dorks = []
+    var query = (site.trim() != '') ? 'site:' + site : ''
+    var found_pages = 0
+    var timeout = 0
+    var captcha_retry_timeout = 0
+}
