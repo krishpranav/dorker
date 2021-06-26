@@ -28,5 +28,18 @@ function Google(site)
     {
         console.log(msg)
     }
-    
+
+    this.set_timeout = function(ms)
+    {
+        timeout = ms
+        return this
+    }
+
+    this.set_captcha_retry_timeout = function(ms)
+    {
+        captcha_retry_timeout = ms
+        return this
+    }
+
+
 }
