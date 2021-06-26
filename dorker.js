@@ -23,4 +23,10 @@ function Google(site)
     web_browser.viewportSize = { width: 1280, height: 800 }
 	web_browser.settings.userAgent = userAgents[ parseInt( Math.random() * userAgents.length ) ]
 	web_browser.__this = this
+
+    web_browser.onConsoleMessage = function(msg)
+    {
+        console.log(msg)
+    }
+    
 }
